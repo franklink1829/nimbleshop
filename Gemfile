@@ -14,3 +14,5 @@ gem 'nimbleshop_authorizedotnet',  path: './nimbleshop_authorizedotnet'
 gem 'nimbleshop_splitable',        path: './nimbleshop_splitable'
 gem 'nimbleshop_cod',              path: './nimbleshop_cod'
 gem 'nimbleshop_stripe',           path: './nimbleshop_stripe'
+
+gem 'railties'
