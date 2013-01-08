@@ -9,10 +9,6 @@ FactoryGirl.define do
       after(:create) { |order| FactoryGirl.create(:line_item, order: order) }
     end
 
-    trait :splitable do
-      payment_method_id 1
-    end
-
     trait :paypalwp do
       payment_method_id 2
     end
@@ -26,12 +22,6 @@ FactoryGirl.define do
     end
 
     factory :order_with_line_items,   traits: [:line_items]
-
-    factory :order_paid_using_splitable,   traits: [:splitable] do |order|
-      order.after(:create) do |o|
-        create :payment_transaction_with_splitable, order: o
-      end
-    end
 
     factory :order_paid_using_paypalwp,   traits: [:paypalwp] do |order|
       order.after(:create) do |o|

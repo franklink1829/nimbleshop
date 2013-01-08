@@ -3,11 +3,6 @@ FactoryGirl.define do
 
     order
 
-    trait :splitable do
-      transaction_gid "42826554YH061931A"
-      operation 'purchased'
-    end
-
     trait :paypalwp do
       transaction_gid "42826554YH061931A"
       operation 'purchased'
@@ -31,7 +26,6 @@ FactoryGirl.define do
       end
     end
 
-    factory :payment_transaction_with_splitable,         traits: [ :splitable ]
     factory :payment_transaction_with_paypalwp,          traits: [ :paypalwp ]
 
     factory :payment_transaction_with_authorizedotnet,   traits: [ :authorizedotnet ] do |pt|

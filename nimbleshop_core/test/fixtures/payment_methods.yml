@@ -1,18 +1,4 @@
 ---
-payment_methods_001:
-  id: "1"
-  name: Splitable
-  description: <p> Splitable helps split the cost of product with friends and family.  </p> <p> <a href="http://splitable.com"> more information </a> </p>
-  type: NimbleshopSplitable::Splitable
-  permalink: splitable
-  metadata: "--- \n\
-    :api_secret: edb5fd7b39652986\n\
-    :expires_in: 24\n\
-    :mode: test\n\
-    :logo_url: http://edibleapple.com/wp-content/uploads/2009/04/silver-apple-logo.png\n\
-    :api_key: edb5fd7b39652986\n"
-  created_at: 2012-04-05 01:42:00.092168
-  updated_at: 2012-04-05 01:42:00.095526
 payment_methods_002:
   id: "2"
   name: Paypal website payments standard

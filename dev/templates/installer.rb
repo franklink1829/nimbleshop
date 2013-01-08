@@ -7,7 +7,6 @@ gem 'nimbleshop_simply',          path: "#{path.join('..', 'nimbleshop_simply')}
 
 gem 'nimbleshop_authorizedotnet', path: "#{path.join('nimbleshop_authorizedotnet')}"
 gem 'nimbleshop_paypalwp',        path: "#{path.join('nimbleshop_paypalwp')}"
-gem 'nimbleshop_splitable',       path: "#{path.join('nimbleshop_splitable')}"
 gem 'nimbleshop_cod',             path: "#{path.join('nimbleshop_cod')}"
 gem 'nimbleshop_stripe',          path: "#{path.join('nimbleshop_stripe')}"
 

@@ -16,13 +16,11 @@ namespace :nimbleshop do
       Rake::Task[cmd].invoke
 
       puts "Loading payment records ..."
-      Rake::Task["nimbleshop_splitable:load_record"].invoke
       Rake::Task["nimbleshop_paypalwp:load_record"].invoke
       Rake::Task["nimbleshop_authorizedotnet:load_record"].invoke
       Rake::Task["nimbleshop_cod:load_record"].invoke
       Rake::Task["nimbleshop_stripe:load_record"].invoke
 
-      Rake::Task["nimbleshop_splitable:copy_images"].invoke
       Rake::Task["nimbleshop_paypalwp:copy_images"].invoke
       Rake::Task["nimbleshop_authorizedotnet:copy_images"].invoke
       Rake::Task["nimbleshop_cod:copy_images"].invoke

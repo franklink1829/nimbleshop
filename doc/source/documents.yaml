@@ -20,9 +20,6 @@
       name: Paypal web payments standard
       url: paypalwp.html
     -
-      name: Splitable
-      url: splitable.html
-    -
       name: Cash on delivery
       url: cod.html
 

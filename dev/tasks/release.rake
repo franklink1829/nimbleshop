@@ -62,7 +62,7 @@ class Gemm
   end
 end
 
-engines = %w(simply core stripe authorizedotnet paypalwp splitable cod).map { |i| "nimbleshop_#{i}" }
+engines = %w(simply core stripe authorizedotnet paypalwp cod).map { |i| "nimbleshop_#{i}" }
 all = engines + ['nimbleshop']
 
 main = ['nimbleshop_core', 'nimbleshop']
@@ -136,7 +136,7 @@ themes.each do |extension|
   end
 end
 
-payment_methods = ['nimbleshop_stripe', 'nimbleshop_authorizedotnet', 'nimbleshop_paypalwp', 'nimbleshop_cod', 'nimbleshop_splitable']
+payment_methods = ['nimbleshop_stripe', 'nimbleshop_authorizedotnet', 'nimbleshop_paypalwp', 'nimbleshop_cod']
 payment_methods.each do |extension|
   namespace extension do
     gem = Gemm.new(extension, default_pkg_dir, version, Pathname.new(extension))
