@@ -1,7 +1,7 @@
 # Encoding: UTF-8
 
 version = File.read(File.expand_path("../../NIMBLESHOP_VERSION", __FILE__)).strip
-rails_version = '3.2.9'
+rails_version = '3.2.11'
 
 Gem::Specification.new do |gem|
 
