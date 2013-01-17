@@ -57,12 +57,11 @@ module AdminHelper
     end
   end
 
-  def gravatar_for(email, options = {})
+  def gravatar_for(email, options = {})        
     email ||= 'user@example.com'
     options = { alt: 'avatar', class: 'avatar', size: 50 }.merge! options
     id = Digest::MD5::hexdigest(email.strip.downcase)
-    default_gravatar_url = Rack::Utils.escape(image_path('default_gravatar.jpg'))
-    url = 'http://www.gravatar.com/avatar/' + id + '.jpg?d='+default_gravatar_url+'&s=' + options[:size].to_s
+    url = "http://www.gravatar.com/avatar/#{id}.jpg?s=#{options[:size].to_s}&d=mm"
     options.delete :size
     image_tag url, options
   end

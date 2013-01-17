@@ -10,7 +10,6 @@
 
     <div class='new-action'>
       <div style='float:left;'> <%= gravatar_for(@order.email) %> </div>
-
       <div style='float:right;margin-left: 7px;'>
         <h4><%= @order.final_billing_address.try(:name) %></h4>
         <div><i class="icon-envelope"></i>&nbsp;<%= @order.email %></div>
